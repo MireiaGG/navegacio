@@ -23,11 +23,18 @@ public class Main {
                     } else if (op2 == 2) {
                         usuarios = segundaOp(sc, usuarios);
 
+                    }else{
+                        System.out.println("Elige entre 0, 1 o 2.");
                     }
+
+
                 }
             }else if (op == 2){
                 System.out.println("Todo va bien");
 
+            }
+            else{
+                System.out.println("Elige entre 0, 1 o 2.");
             }
         }
         System.out.println("Has cerrado el menú. Adios");

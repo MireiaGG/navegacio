@@ -13,7 +13,7 @@ public class Main {
             System.out.println("Bienvenido al menú principal elige una de las opciones:");
             System.out.println("1.Gestión de usuarios");
             System.out.println("2.Mirar estado del sistema");
-            System.out.println("0.salir");
+            System.out.println("0.Salir");
             op = sc.nextInt();
             if (op == 1){
                 while(op2 != 0){
@@ -26,9 +26,12 @@ public class Main {
                     }
                 }
             }else if (op == 2){
+                System.out.println("Todo va bien");
 
             }
         }
+        System.out.println("Has cerrado el menú. Adios");
+        sc.close();
     }
     public static int subMenu(Scanner sc){
         System.out.println("Has abierto el submenú elige una opcion:");
@@ -46,8 +49,8 @@ public class Main {
     }
     public static ArrayList segundaOp(Scanner sc, ArrayList<String> usuarios){
         System.out.println("Pon el nombre del nuevo usuario:");
-        String nom = sc.next();
         sc.nextLine();
+        String nom = sc.nextLine();
         usuarios.add(nom);
         return usuarios;
 
